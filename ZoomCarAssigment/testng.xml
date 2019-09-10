@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ZoomCarAssigment" parallel="tests">
+    
+	 <test name="ChromeTest">
+	 	<parameter name="browser" value="chrome" />
+		<classes>
+	    	 <class name="com.zoom.qa.testcases.ZoomCarBookingTests"/>
+	   	</classes>
+	 </test> <!-- ChromeTest -->
+  
+     <test name="FirefoxTest">
+	 	<parameter name="browser" value="firefox" />
+ 		<classes>
+     		 <class name="com.zoom.qa.testcases.ZoomCarBookingTests"/>
+    	</classes>
+  	</test> <!-- FirefoxTest -->
+  
+  	<test name="IETest">
+	 	<parameter name="browser" value="ie" />
+ 		<classes>
+      		<class name="com.zoom.qa.testcases.ZoomCarBookingTests"/>
+    	</classes>
+  	</test> <!-- IETest -->
+
+
+</suite> <!-- ZoomCarAssigment -->
